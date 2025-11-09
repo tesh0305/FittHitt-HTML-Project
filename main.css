@@ -1,4 +1,4 @@
-html, body {
+html, body { /*Is the header required for every page and the background*/
 height: 100%;
 margin: 0;
 padding: 0;
@@ -178,6 +178,8 @@ background-color: #ffd700cc;
 color: black;
 }
 
+/*^^^^Is the header required for every page^^^^^^^^*/
+
 
 .page-wrapper { /*needed due to overlapping div containers*/
 position: relative;
@@ -273,4 +275,5 @@ flex-direction: column;
 justify-content: flex-start;
 padding-top: 50px;
 }
+
 }
