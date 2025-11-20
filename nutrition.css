@@ -251,7 +251,7 @@ div.top-right-image {
 }
 
 .text-container h3 {
-    color: #34495e;
+    color: #000000;
     margin-top: 15px;
     margin-bottom: 8px;
     font-size: 1.1rem;
@@ -259,7 +259,7 @@ div.top-right-image {
 
 .text-container p {
     font-size: 14px;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
     margin-bottom: 15px;
 }
