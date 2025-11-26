@@ -1,7 +1,4 @@
-
-
-        
-* {
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,9 +22,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ===========================
-   Background
-   =========================== */
 .bg {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-size: cover;
