@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-       <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="/images/FHlogo.webp" type="image/x-icon" />
-        <link rel="stylesheet" href="nutrition.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Nutrition Information</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fithitt - Your guide to nutrition and wellness">
+    <title>Fithitt - Nutrition Information</title>
+    <link rel="icon" href="/images/FHlogo.webp" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nutrition.css">
 </head>
 <body>
-          <header class="header">
-            <div class="logobox">
-                <h1>Fithitt</h1>
+    <header class="header">
+        <div class="logobox">
+            <h1>FITHITT</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-button-container">
+            <input type="checkbox" id="menuToggle" />
+            <label for="menuToggle" class="menu-button-label">Menu</label>
+            <nav class="dropdown-menu">
+                <a href="#home">Home</a>
+                <a href="#about">Nutrition</a>
+                <a href="#services">Workout Plan</a>
+                <a href="#contact">Learn More</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Nutrition Information</h2>
+                <p>
+                    Good nutrition is essential for maintaining overall health and well-being. 
+                    It supports growth and development, and helps prevent chronic diseases such 
+                    as obesity, diabetes, and heart disease. Understanding proper nutrition 
+                    empowers you to make informed choices about your diet and lifestyle.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="right.jpg" alt="Healthy nutrition and lifestyle" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Nutrition Hero Image</div>'">
             </div>
         </div>
-         <nav class="nav-bar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="menu-button-container">
-        <input type="checkbox" id="menuToggle" />
-        <label for="menuToggle" class="menu-button-label">Menu</label>
-        <nav class="dropdown-menu">
-            <a href="#home">Home</a>
-            <a href="#about">Nutrition</a>
-            <a href="#services">Workout Plan</a>
-            <a href="#contact">Learn More</a>
-        </nav>
-    </div>
-    </header>
-        
+    </section>
 
-<div class="top-half">
-  <div class="inner-container">
-     <h2>Nutrition Information</h2>
-         <p>Good nutrition is essential for maintaining 
-            overall health and well-being. It
-            supports growth and development,
-            and helps prevent chronic diseases such as obesity,
-            diabetes, and heart disease.
-        </p>
-  </div>
-  
-   <div class="top-right-container">
-    <img src="right.jpg" alt="Top Right" class="top-right-image">
-   </div>
-</div>
-
-<div class="bottom-section">
-        <div class="content-wrapper">
-            <div class="text-container">
+    <section class="nutrients-section">
+        <div class="nutrients-wrapper">
+            <div class="nutrients-text">
                 <h2>Key Nutrients</h2>
                 
-                <h3>Carbohydrates:</h3>
-                <p>
-                    The body's primary energy source.
-                    Found in foods like bread, rice, pasta, and fruits.
-                </p>
-                
-                <h3>Proteins:</h3>
-                <p>
-                    Essential for building and repairing tissues.
-                    Sources include meat, fish, eggs, beans, and nuts.
-                </p>
-                
-                <h3>Fats:</h3>
-                <p>
-                    Important for brain health and hormone production.
-                    Healthy fats are found in avocados, nuts, seeds, and olive oil.
-                </p>
-                
-                <h3>Vitamins and Minerals:</h3>
-                <p>
-                    Crucial for various bodily functions.
-                    Found in a variety of fruits, vegetables, dairy products, and meats.
-                </p>
+                <div class="nutrient-item">
+                    <h3>Carbohydrates</h3>
+                    <p>
+                        The body's primary energy source. Found in foods like bread, rice, 
+                        pasta, and fruits. They fuel your brain, muscles, and organs throughout the day.
+                    </p>
+                </div>
+
+                <div class="nutrient-item">
+                    <h3>Proteins</h3>
+                    <p>
+                        Essential for building and repairing tissues. Sources include meat, fish, 
+                        eggs, beans, and nuts. Protein is crucial for muscle growth and immune function.
+                    </p>
+                </div>
+
+                <div class="nutrient-item">
+                    <h3>Fats</h3>
+                    <p>
+                        Important for brain health and hormone production. Healthy fats are found 
+                        in avocados, nuts, seeds, and olive oil. They help absorb vital nutrients.
+                    </p>
+                </div>
+
+                <div class="nutrient-item">
+                    <h3>Vitamins & Minerals</h3>
+                    <p>
+                        Crucial for various bodily functions. Found in a variety of fruits, 
+                        vegetables, dairy products, and meats. They support immunity, bone health, and energy.
+                    </p>
+                </div>
             </div>
 
-            
-            <div class="images-container">
+            <div class="nutrients-images">
                 <div class="image-card">
-                    <div class="placeholder">Carbohydrates</div>
-                       <img src="carbs.jpeg" alt="Nutrition 1"> 
+                    <img src="carbs.jpeg" alt="Carbohydrates" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Carbohydrates</div>'">
+                    <div class="image-card-label">Carbohydrates</div>
                 </div>
                 <div class="image-card">
-                    <div class="placeholder">Proteins</div>
-                       <img src="protein.png" alt="Nutrition 2"> 
+                    <img src="protein.png" alt="Proteins" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Proteins</div>'">
+                    <div class="image-card-label">Proteins</div>
                 </div>
                 <div class="image-card">
-                    <div class="placeholder">Fats</div>
-                       <img src="fats.jpg" alt="Nutrition 3"> 
+                    <img src="fats.jpg" alt="Healthy Fats" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Fats</div>'">
+                    <div class="image-card-label">Healthy Fats</div>
                 </div>
                 <div class="image-card">
-                    <div class="placeholder">Vitamins and Minerals</div>
-                       <img src="vitamins.png" alt="Nutrition 4">
+                    <img src="vitamins.png" alt="Vitamins and Minerals" onerror="this.parentElement.innerHTML='<div class=\'placeholder\'>Vitamins & Minerals</div>'">
+                    <div class="image-card-label">Vitamins & Minerals</div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-
-	<div class="bg" id="background"></div>
-  
-
+    <div class="bg" id="background"></div>
 </body>
 </html>
