@@ -40,7 +40,6 @@ body::before {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    border-radius: 8px;
     padding: 0 20px;
     position: relative;
     width: 100%;
@@ -178,9 +177,10 @@ nav, .nav-bar, .nav-bar ul {
     transform: scale(1.05);
 }
 
-/* MOBILE MENU */
+/* MOBILE MENU - Improved burger menu */
 .menu-button-container {
     flex-shrink: 0;
+    display: none;
 }
 
 #menuToggle {
@@ -189,49 +189,51 @@ nav, .nav-bar, .nav-bar ul {
 
 .menu-button-label {
     display: block;
-    background-color: black;
     color: white;
-    padding: 10px 15px;
-    font-weight: bold;
+    padding: 10px 20px;
+    font-weight: 600;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.2s;
+    background: rgba(58, 58, 58, 0.9);
+    transition: background 0.3s ease;
 }
 
 .menu-button-label:hover {
-    background-color: #333;
+    background: rgba(80, 80, 80, 0.9);
 }
 
 .dropdown-menu {
     position: absolute;
-    top: 55px;
-    padding: 12px 15px;
-    right: 0;
-    background-color: black;
-    border-radius: 6px;
-    width: 160px;
+    top: 60px;
+    right: 20px;
+    background: rgba(26, 26, 26, 0.98);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    width: 200px;
     transform-origin: top right;
     transform: scaleY(0);
-    transition: transform 0.3s ease-out;
+    opacity: 0;
+    transition: all 0.3s ease;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 6px black;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
 #menuToggle:checked + .menu-button-label + .dropdown-menu {
     transform: scaleY(1);
+    opacity: 1;
 }
 
 .dropdown-menu a {
+    display: block;
     color: white;
-    padding: 12px 15px;
+    padding: 15px 20px;
     text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px solid #444;
-    transition: background-color 0.2s;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 .dropdown-menu a:last-child {
@@ -239,8 +241,9 @@ nav, .nav-bar, .nav-bar ul {
 }
 
 .dropdown-menu a:hover {
-    background-color: #ffd700cc;
+    background: #FFD700;
     color: black;
+    padding-left: 30px;
 }
 
 /* PAGE WRAPPER */
@@ -921,6 +924,7 @@ footer hr {
     width: 80%;
     border: 1px solid #ccc;
 }
+
 
 
 
