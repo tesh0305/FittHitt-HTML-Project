@@ -52,6 +52,8 @@ body::before {
     height: auto;
     flex-shrink: 0;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.7));
+    z-index: 20;
+    position: relative;
 }
 
 .logo img {
@@ -139,6 +141,12 @@ nav, .nav-bar, .nav-bar ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.nav-bar ul {
+    pointer-events: auto;
 }
 
 .nav-bar ul {
@@ -167,9 +175,11 @@ nav, .nav-bar, .nav-bar ul {
 /* MOBILE MENU */
 .menu-button-container {
     flex-shrink: 0;
-    width: 100px; /* Match logo width for balance */
+    width: 100px;
     display: flex;
     justify-content: flex-end;
+    z-index: 20;
+    position: relative;
 }
 
 #menuToggle {
