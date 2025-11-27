@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Workout Plan</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FITTHITT</title>
+    <meta name="description" content="Exercise plans for maintaining weight, building muscle, and strength.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+         <header class="header">
     <div class="logobox">
         <h1>Fithitt</h1>
     </div>
@@ -23,55 +24,301 @@
         </ul>
     </nav>
 </header>
-
-<main>
-    <section>
-        <h2>Exercise Plan</h2>
-        <div class="goals-row">
-        <div class="goal">
-            <h3>Maintaining Weight</h3>
-            <p>To Maintain Weight, aim to balance your caloric intake with 
+    <main>
+        <section>
+          <div class="EP"><h2>Exercise Plan</h2></div>
+          <div class="exercise-plan-container">
+            <article class="plan-card" id="plan1">
+              <h2>Maintaining Weight</h2>
+              <p class="description">
+                To Maintain Weight, aim to balance your caloric intake with
                 your activity level. Doing moderate cardio a few times a week while
                 including some light full-body sessions helps you maintain weight while 
                 improving cardiovascular fitness and energy levels,
-                especially when it can be easy to eat more than you realise when training
-                for building Strength and Muscle Mass.
-            </p>
-        </div>
-        <div class ="goal">
-            <h3>Building Muscle</h3>
-            <p>To build muscle, you should aim to progressively overload the muscle group you are training.
+                especially when it can be easy to eat more than you realise when training.
+              </p>
+              <button class="dropdown-arrow" aria-expanded="false" aria-controls="table1">▼</button>
+              <div id="table1" class="table-container" hidden>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Monday</th>
+                      <th>Tuesday</th>
+                      <th>Wednesday</th>
+                      <th>Thursday</th>
+                      <th>Friday</th>
+                      <th>Saturday</th>
+                      <th>Sunday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>30 min Light Jogging</td>
+                      <td>15 min Rowing Machine</td>
+                      <td>Rest Day</td>
+                      <td>20 min Cycling</td>
+                      <td>15 min Boxing Bag</td>
+                      <td>15 min Stairmaster</td>
+                      <td>Rest Day</td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Bicep Curls @ 50% ORM</td>
+                      <td>8 reps, 3 sets Military Press @ 65% ORM</td>
+                      <td></td> 
+                      <td>10 reps, 5 reps Bulgarian Split Squats @ 60% ORM</td>
+                      <td>10 reps, 4 sets Bench press @ 60% ORM</td>
+                      <td>8 reps, 4 sets Kettlebell Swings @ 60% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Tricep Extensions @ 50% ORM</td>
+                      <td>10 reps, 3 sets Shoulder Press @ 65% ORM</td>
+                      <td></td>
+                      <td>10 reps, 5 sets 1/4 Squat @ 60% ORM</td>
+                      <td>10 reps, 4 sets Cable Crossover @ 65% ORM</td>
+                      <td>12 reps, 4 sets Goblet Squats @60% ORM</td>
+                      <td></td> 
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Bench Press @ 60% ORM</td>
+                      <td>12 reps, 3 sets Tricep Extensions @ 65% ORM</td>
+                      <td></td>
+                      <td>10 reps, 5 sets RDL @ 60% ORM</td>
+                      <td>10 reps, 4 sets Incline DB BP @ 65% ORM</td>
+                      <td>8 reps, 4 sets DB Rows @60% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Bent Over DB Rows @ 60% ORM</td>
+                      <td>10 reps, 3 sets Hammer Curls @ 50% ORM</td>
+                      <td></td>
+                      <td>10 reps, 5 reps Pistol Squat @ 60% ORM</td>
+                      <td>10 reps, 4 sets Machine Flys @ 65% ORM</td>
+                      <td>8 reps, 4 sets Shoulder Press @ 60% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Lat Pulldown @ 60% ORM</td>
+                      <td>8 reps, 3 sets DB Rows @ 65% ORM</td>
+                      <td></td>
+                      <td>10 reps, 5 sets Leg Extensions @ 60% ORM</td>
+                      <td>10 reps, 4 sets Overhead Press @ 60% ORM</td>
+                      <td>8 reps, 4 sets RDLs @ 60% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets, Squats @ 60%ORM</td>
+                      <td>10 reps, 3 sets, Lat Pulldown @ 65% ORM</td>
+                      <td></td>
+                      <td>8 reps, 5 sets Nordic Curls @ 65% ORM</td>
+                      <td>12 reps, 4 sets Front Raise @ 50% ORM</td>
+                      <td>3 sets Plank for 45-60 seconds</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+            
+            <article class="plan-card" id="plan2">
+              <h2>Building Muscle</h2>
+              <p class="description">
+                To build muscle, you should aim to progressively overload the muscle group you are training.
                 This means gradually increasing the weight, reps, or sets over time. Training in the 6-12 rep 
                 range at 65-85% of your one-rep max is ideal for ideal muscle growth. Ensure proper form, rest 60-90 
                 seconds between sets, eat sufficient protein, roughly 1.5 grams of protein for every kg of body weight, 
                 and allow muscles 48-72 hours to recover before training the same group again.
-            </p>
-        </div>
-        <div class="goal">
-            <h3>Building Strength</h3>
-            <p>Building strength typically involves lifting 80-90% (or more) of your one-rep max for 3-6 reps per set,
+              </p>
+              <button class="dropdown-arrow" aria-expanded="false" aria-controls="table2">▼</button>
+              <div id="table2" class="table-container"hidden>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Monday</th>
+                      <th>Tuesday</th>
+                      <th>Wednesday</th>
+                      <th>Thursday</th>
+                      <th>Friday</th>
+                      <th>Saturday</th>
+                      <th>Sunday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>5-10 Mins Stretching</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>Rest Day</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>Rest Day</td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Bicep Curls @ 75% ORM</td>
+                      <td>8 reps, 4 sets Bench Press @ 70% ORM</td>
+                      <td></td>
+                      <td>10 reps, 4 sets Leg Press @ 75% ORM</td>
+                      <td>8 reps, 4 sets Bench Press @ 75% ORM</td>
+                      <td>8 reps, 4 sets Leg Press @ 75% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 3 sets Tricep Extensions @ 75% ORM</td>
+                      <td>10 reps, 3 sets Incline DB Bench Press @ 75% ORM</td>
+                      <td></td>
+                      <td>8 reps, 4 sets Bulgarian Split Squats @ 70% ORM</td>
+                      <td>10 reps, 4 sets Lat Pulldowm @ 70% ORM</td>
+                      <td>10 reps, 3 sets Bulgarian Split Squats @75% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10 reps, 3 sets  Lateral Raises @ 70% ORM</td>
+                      <td>10 reps, 3 sets Cable Flies @ 70% ORM</td>
+                      <td></td>
+                      <td>10 reps, 4 sets RDL @ 70% ORM</td>
+                      <td>10 reps, 3 sets Incline DB Bench Press @ 70% ORM</td>
+                      <td>10 reps, 3 sets Leg Extensions @ 70% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>10 reps, 4 sets Front Raises @ 70% ORM</td>
+                      <td>10 reps, 4 sets Lat Pulldowm @ 70% ORM</td>
+                      <td></td>
+                      <td>10 reps, 3 sets BB Squats @ 70% ORM</td>
+                      <td>10 reps, 4 sets Cable Flies @ 70% ORM</td>
+                      <td>8 reps, 3 sets BB Squats @ 75% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 3 sets Hammer Culrs @ 70% ORM</td>
+                      <td>8 reps, 4 sets BB Rows @75% ORM</td>
+                      <td></td>
+                      <td>10 reps, 5 sets Leg Extensions @ 70% ORM</td>
+                      <td>10 reps, 3 sets BB Rows @ 70% ORM</td>
+                      <td>8 reps, 4 sets RDLs @ 70% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>8 reps, 4 sets Bent Over DB Rows @ 75% ORM</td>
+                      <td>8 reps, 3 sets Deadlifts @ 70%ORM</td>
+                      <td></td>
+                      <td>10 reps, 5 sets Hamstring Curls @ 70% ORM</td>
+                      <td>10 reps, 3 sets Deadlifts @ 70% ORM</td>
+                      <td>10 reps, 3 sets Hamstring Curls @ 75% ORM</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+                
+            <article class="plan-card" id="plan3">
+              <h2>Building Strength</h2>
+              <p class="description">
+                Building strength typically involves lifting 80-90% (or more) of your one-rep max for 3-6 reps per set,
                 focusing on compound movements with full recovery between sets and progressive overload over time.
                 Compound lifts such as squats, deadlifts, bench presses, and overhead presses form the foundation of most strength programs.
                 Rest periods of 2-5 minutes between sets are recommended to allow for full recovery and maximal effort in each set. Proper 
                 technique and consistent progression are essential to avoid injury and ensure steady gains. Supporting your training with
-                 adequate nutrition, hydration, and sleep further enhances strength development and overall performance.
-            </p>
-        </div>
-        </div>
-    </section>
-</main>
-
-<audio id="call-audio">
+                adequate nutrition, hydration, and sleep further enhances strength development and overall performance.
+              </p>
+              <button class="dropdown-arrow" aria-expanded="false" aria-controls="table3">▼</button>
+              <div id="table3" class="table-container" hidden>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Monday</th>
+                      <th>Tuesday</th>
+                      <th>Wednesday</th>
+                      <th>Thursday</th>
+                      <th>Friday</th>
+                      <th>Saturday</th>
+                      <th>Sunday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>5-10 Mins Stretching</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>Rest Day</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>5-10 Mins Stretching</td>
+                      <td>Rest Day</td>
+                    </tr>
+                    <tr>
+                      <td>6 reps, 3 sets Bicep Curls @ 90% ORM</td>
+                      <td>5 reps, 3 sets Bench Press @ 85% ORM</td>
+                      <td></td>
+                      <td>6 reps, 3 sets Back Squats @ 85% ORM</td>
+                      <td>5 reps, 3 sets Bench press @ 85% ORM</td>
+                      <td>5 reps, 3 sets Back Squats @ 80% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4 reps, 5 sets Tricep Extensions @ 90% ORM</td>
+                      <td>5 reps, 4 sets Incline DB Bench Press @ 85% ORM</td>
+                      <td></td>
+                      <td>4 reps, 5 sets Hamstring Curls @ 90% ORM</td>
+                      <td>5 reps, 4 sets Incline DB Bench Press @ 90% ORM</td>
+                      <td>6 reps, 3 sets Hamstring Curls @80% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4 reps, 4 sets Hammer Curls @ 90% ORM</td>
+                      <td>5 reps, 3 sets Cable Flies @ 85% ORM</td>
+                      <td></td>
+                      <td>5 reps, 4 sets RDL @ 85% ORM</td>
+                      <td>6 reps, 4 Cable Flies@ 85% ORM</td>
+                      <td>5 reps, 3 sets RDLs @90% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>6 reps, 3 sets Bent Over DB Rows @ 85% ORM</td>
+                      <td>5 reps, 3 sets Lat Pulldown @ 90% ORM</td>
+                      <td></td>
+                      <td>6 reps, 3 sets Leg Extensions @ 85% ORM</td>
+                      <td>5 reps, 3 sets Lat Pulldown @ 90% ORM</td>
+                      <td>5 reps, 4 sets Shoulder Press @ 80% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>5 reps, 4 sets Lateral Raises @ 90% ORM</td>
+                      <td>6 reps, 3 sets BB Rows @ 85% ORM</td>
+                      <td></td>
+                      <td>5 reps, 5 sets Leg Press @ 95% ORM</td>
+                      <td>6 reps, 3 sets BB Rows @ 85% ORM</td>
+                      <td>6 reps, 4 sets Leg Press @ 90% ORM</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3 reps, 4 sets Front Raises @ 95% ORM</td>
+                      <td>3 reps, 3 sets Deadlifts @ 95% ORM</td>
+                      <td></td>
+                      <td>5 reps, 4 sets Calf Raises @ 80% ORM</td>
+                      <td>5 reps, 4 sets Front Raise @ 80% ORM</td>
+                      <td>4 reps, 4 sets Calf Raises @ 85% ORM</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      <script src="Script.js"></script>
+      <audio id="call-audio">
   <source src="unavilablePhone.mp3" type="audio/mpeg">
 </audio>
-        
 </body>
-<footer>
+
+      <footer>
   <div class="footer-inner">
     <div class="footer-column footer-brand">
       <div class="footer-logobox">
         <h1>FITTHITT</h1>
-        <p>Kick Start your fitness journey.</p>
+        <p>Kick Start your fitness journey</p>
       </div>
     </div>
 
@@ -95,7 +342,6 @@
       </ul>
     </div>
 
-
     <div class="footer-column">
       <h4>Contact</h4>
       <ul>
@@ -112,10 +358,7 @@
     <p>© 2025 FITTHITT. All rights reserved.</p>
   </div>
 </footer>
-
-    
 </html>
-
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -133,13 +376,3 @@
     }
   });
 </script>
-
-
-
-
-
-
-
-
-
-
