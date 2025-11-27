@@ -335,7 +335,7 @@ nav, .nav-bar, .nav-bar ul {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-section p {
+section p h3 li {
     color:#ffffff;
 }
 
@@ -858,5 +858,6 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
