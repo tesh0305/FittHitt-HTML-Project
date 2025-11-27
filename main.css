@@ -75,7 +75,6 @@ body::before {
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     text-align: right;
-    padding-right: 43px;
     width: 100%;
     color: white;
     top: 15px;
@@ -855,3 +854,4 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
