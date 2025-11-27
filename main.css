@@ -337,8 +337,9 @@ nav, .nav-bar, .nav-bar ul {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.section p h3 li {
+section h3 {
     color:#ffffff;
+    font-weight: 3rem;
 }
 
 /* CONTAINERS WRAPPER */
@@ -931,6 +932,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
