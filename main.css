@@ -51,7 +51,7 @@ body::before {
     width: 100px;
     height: auto;
     flex-shrink: 0;
-    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     z-index: 20;
     position: relative;
 }
@@ -930,6 +930,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
