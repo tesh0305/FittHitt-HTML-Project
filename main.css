@@ -335,6 +335,10 @@ nav, .nav-bar, .nav-bar ul {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+section p {
+    color:#ffffff;
+}
+
 /* CONTAINERS WRAPPER */
 .containers-wrapper {
     display: flex;
@@ -854,4 +858,5 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
