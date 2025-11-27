@@ -705,6 +705,7 @@ footer {
     font-family: 'Bebas Neue', sans-serif;
     width: 100%;
     box-sizing: border-box;
+    border-top: 1px solid #444; /* dividing line */
 }
 
 .footer-inner {
@@ -927,6 +928,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
