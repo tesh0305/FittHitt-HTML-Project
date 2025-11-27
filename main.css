@@ -693,7 +693,7 @@ table th {
 /* FOOTER */
 .footer-logobox {
     text-align: left;
-    padding: 20px;
+    padding: 0;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
 }
@@ -701,32 +701,99 @@ table th {
 footer {
     background-color: #2c2929;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    padding: 30px 40px 15px;
     font-family: 'Bebas Neue', sans-serif;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
-footer p {
-    margin: 5px 0;
-    padding: 5px 20px;
-    font-size: 1.7em;
-    text-align: left;
+.footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-footer hr {
-    width: 80%;
-    border: 1px solid #ccc;
+.footer-column {
+    min-width: 180px;
+    flex: 1;
+}
+
+.footer-brand p {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.95rem;
+    margin-top: 8px;
+    max-width: 260px;
+}
+
+.footer-column h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #FFD700;
 }
 
 .footer-logobox h1 {
     margin: 0;
-    font-size: 2em;
-    align-content: left;
+    font-size: 2rem;
     text-align: left;
 }
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+footer hr {
+    width: 100%;
+    max-width: 1400px;
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px auto 10px;
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
@@ -860,6 +927,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
