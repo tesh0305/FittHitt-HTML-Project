@@ -68,6 +68,10 @@
         </div>
     </div>
 
+
+<audio id="call-audio">
+  <source src="unavilablePhone.mp3" type="audio/mpeg">
+</audio>
     </body>
 
 
@@ -104,7 +108,7 @@
       <h4>Contact</h4>
       <ul>
         <li>Email: info@fitthittdemo.com</li>
-        <li>Phone: +353 00 000 0000</li>
+        <a href="tel:+353000000000" id="phone-link">
         <li>Address: Limerick, Ireland</li>
       </ul>
     </div>
@@ -119,6 +123,23 @@
 
     
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const phoneLink = document.getElementById('phone-link');
+    const audio = document.getElementById('call-audio');
+
+    if (phoneLink && audio) {
+      phoneLink.addEventListener('click', function (e) {
+        // Comment this out if you *also* want to open the dialer
+        e.preventDefault();
+
+        audio.currentTime = 0;
+        audio.play();
+      });
+    }
+  });
+</script>
 
 
 
