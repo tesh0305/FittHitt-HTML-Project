@@ -685,6 +685,7 @@ table th, table td {
     border: 1px solid #ccc;
     padding: 12px;
     text-align: left;
+    color: black;
 }
 
 table th {
@@ -930,6 +931,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
