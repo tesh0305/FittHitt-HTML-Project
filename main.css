@@ -100,7 +100,9 @@ h3 {
 
 /* BUTTONS */
 .gold-box {
-    margin-top: 20px;
+margin: 20px auto 0;
+text-align: center;
+width: fit-content;
 }
 
 .learn-more-btn {
@@ -858,6 +860,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
