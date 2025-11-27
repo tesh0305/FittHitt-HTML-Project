@@ -52,6 +52,7 @@ body::before {
     left: 0px;
     width: 100px;
     height: auto;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.7));
 }
 
 .logo img {
@@ -136,6 +137,7 @@ nav, .nav-bar, .nav-bar ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -100px; /* Compensate for logo width to true center */
 }
 
 .nav-bar ul {
