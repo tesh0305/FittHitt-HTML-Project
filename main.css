@@ -48,16 +48,16 @@ body::before {
 
 /* LOGO */
 .logo {
-    top: -12px;
-    left: 0px;
     width: 100px;
     height: auto;
+    flex-shrink: 0;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.7));
 }
 
 .logo img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* TYPOGRAPHY */
@@ -133,11 +133,12 @@ nav, .nav-bar, .nav-bar ul {
 }
 
 .nav-bar {
-    flex: 1 1 0%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -100px; /* Compensate for logo width to true center */
 }
 
 .nav-bar ul {
@@ -166,6 +167,9 @@ nav, .nav-bar, .nav-bar ul {
 /* MOBILE MENU */
 .menu-button-container {
     flex-shrink: 0;
+    width: 100px; /* Match logo width for balance */
+    display: flex;
+    justify-content: flex-end;
 }
 
 #menuToggle {
@@ -793,7 +797,7 @@ footer hr {
     }
 
     .menu-button-container {
-        display: block;
+        display: flex;
     }
 
     .hero-section,
