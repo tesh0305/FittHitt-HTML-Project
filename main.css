@@ -519,6 +519,85 @@ section h3 {
     transform: scale(1.05);
 }
 
+/*EXERCISE PLAN SECTION*/
+.EP {
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.exercise-plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #2c2929;
+}
+
+.plan-card {
+    border-radius: 12px;
+    padding: 40px 32px;
+    flex: 1;
+    transition: transform 0.3s ease;
+    background-color: #1a1a1a
+}
+
+.plan-card:hover {
+    transform: translateY(-4px);
+}
+
+.plan-card h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.plan-card .subtitle {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 32px;
+}
+
+.plan-card .description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.plan-card ul {
+    list-style: none;
+    margin: 24px 0;
+}
+
+.plan-card li::before {
+    content: '✓';
+    background-color: #FFD700;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.dropdown-arrow {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #FFD700;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.plan-card.active.dropdown-arrow {
+    transform: rotate(180deg);
+}
+
 /* NUTRIENTS SECTION */
 .nutrients-section {
     background: rgba(44, 41, 41, 0.9);
@@ -933,6 +1012,7 @@ footer hr {
         font-size: 1.8rem;
     }
 }
+
 
 
 
